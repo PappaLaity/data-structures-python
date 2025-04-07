@@ -18,10 +18,9 @@ class LinkedList:
         self.__node = node
 
     def insertAfter(self, item, index):
-        i = 1
+        i = 0
         node = Node(item)
         temp = self.__node
-        # print(temp.data)
         while i < index and temp.next != None:
             i += 1
             temp = temp.next
@@ -29,7 +28,7 @@ class LinkedList:
             node.next = temp.next
             temp.next = node
         else:
-            print("we can't add at this index the list size is less than the index")
+            print("We can't add at this index the list size is less than the index")
 
     def insert(self, item):
         node = Node(item)
@@ -54,7 +53,7 @@ class LinkedList:
     def delete(self, index):
         previous = None
         temporary = self.__node
-        i = 1
+        i = 0
         if self.__node == None:
             print("The linked list is empty!")
         elif index == 1:
@@ -86,35 +85,73 @@ class LinkedList:
 
     def search(self, item):
         temp = self.__node
-        i = 1
-        while temp.data != item & temp.next:
+        i = 0
+        while temp.data != item and temp.next:
             temp = temp.next
             i = i + 1
         if temp.data == item:
-            print(f"The item {item} is found at postion {i}")
+            print(f"The item {item} is found at position {i}")
             return i
         else:  # Mean the item doest not exist in the list
             print(f"The item {item} doesn't exist in the list")
+            return None
 
     def traverse(self, index):
-        i = i
+        i = 0
         temp = self.__node
+        # traverse the list
         while i < index and temp.next:
             i += 1
             temp = temp.next
+        # Check if we have in the position and the return node/data
         if i == index:
             print(f"The value of node at the {index}th position is {temp.data}")
+            return temp
         else:
             print("The index doest exist in the linked list")
+            return None
 
     def get_length(self):
-        pass
+        i = 1
+        temp = self.__node
+        while temp.next:
+            i += 1
+            temp = temp.next
+        return i
 
     def access(self, index):
-        pass
+        i, temp = 0, self.__node
+        # Get the length of list
+        ind = self.get_length()
+        #  Check if the index does not exist in the list
+        if index < 0 or index > ind:
+            print(f"The index {index} doesn't exist in this list")
+            return None
+        # Traverse the linked list to the index
+        while i < index and temp.next:
+            i += 1
+            temp = temp.next
+        # return the data if we are at the index
+        if i == index:
+            return temp.data
 
     def update(self, index, new_data):
-        pass
+        i, temp = 0, self.__node
+        ind = self.get_length()
+        #  Check if the index does not exist in the list
+        if index < 0 or index >= ind:
+            print(f"The index {index} doesn't exist in this list")
+            return None
+        # Traverse the list to the index position
+        while i < index and temp.next:
+            i = i + 1
+            temp = temp.next
+        # check if we have in index and update data
+        if i == index:
+            temp.data = new_data
+            print("Data successfully updated")
+        # if not temp.next:
+        #     print(f"The index {ind} don't exist in the list")
 
     def concatenate(self, new_list):
         temp = self.__node
