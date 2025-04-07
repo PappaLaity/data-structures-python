@@ -7,11 +7,11 @@ class Stack:
 
     def pop(self):
       try:
-        self.__stack.remove(self.__stack[-1])
+        self.__stack.pop(-1)
       except:
         print("Something wrong")
 
-    def top(self):
+    def peek(self):
       try:
         return self.__stack[-1]
       except:
@@ -20,11 +20,11 @@ class Stack:
     def isEmpty(self)->bool:
       return len(self.__stack) == 0
     
-    def isEmptyV2(self)->str:
-      if len(self.__stack) == 0:
-        print("The stack is empty")
-      else:
-        print("The stack is not empty")
+    # def isEmptyV2(self)->str:
+    #   if len(self.__stack) == 0:
+    #     print("The stack is empty")
+    #   else:
+    #     print("The stack is not empty")
 
     def size(self):
       return len(self.__stack)
