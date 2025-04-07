@@ -1,0 +1,12 @@
+[project]
+name = "data-structures-py"
+version = "0.1.0"
+description = "A pedagogical Python package implementing core data structures from scratch"
+authors = [{name = "Pappa laity", email = "pndiaye@aimsammi.org"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
