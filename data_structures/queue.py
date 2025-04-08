@@ -1,20 +1,16 @@
 class Queue:
 
-    __size = 100
-
     def __init__(self) -> None:
         self.__queue = []
 
     def enqueue(self, newElement) -> None:
-        if self.isFull():
-            print("The queue is full can't add a new element")
-        else:
-            self.__queue.append(newElement)
-            print(f"{newElement} added successfully to the queue\n")
+        self.__queue.append(newElement)
+        print(f"{newElement} added successfully to the queue\n")
 
     def dequeue(self) -> str:
         if self.isNull():
-            return "The queue is Empty!"
+            print("The queue is Empty!")
+            return None
         else:
             self.__queue.pop(0)
             return "Successfully popped\n"
@@ -28,13 +24,9 @@ class Queue:
     def rear(self):
         if self.isNull():
             print("The queue is Empty!")
+            return None
         else:
             return self.__queue[-1]
-
-    def isFull(self):
-        if len(self.__queue) == self.__class__.__size:
-            return True
-        return False
 
     def isNull(self) -> bool:
         if len(self.__queue) == 0:
@@ -45,6 +37,9 @@ class Queue:
         if len(self.__queue) == 0:
             return True
         return False
+
+    def dequeue_asc(self):
+      pass
 
     def display_queue(self):
         print(self.__queue)
