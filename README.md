@@ -1,24 +1,30 @@
-# Data Structure
+# Laity Data Structure
 
 A data structure is a way of organizing and storing data in our machine so that it can be accessed and used efficiently. It refers to the logical or mathematical representation of data, as well as the implementation in a computer program.
 
 Data structures can be classified into two broad categories:
-
 
 *   **Linear Data Structure**: A data structure in which data elements are arranged sequentially or linearly, where each element is attached to its previous and next adjacent elements, is called a linear data structure. Examples are array, stack, queue, etc.
 *   **Non-linear Data Structure**: Data structures where data elements are not placed sequentially or linearly are called non-linear data structures. Examples are trees and graphs.
 
 The non-primitive data structures can also be classified based on whether they are built-in or user-defined.
 
-1. Python offers implicit support for built in structures that include List, Tuple, Set and Dictionary.
-2. Users can also create their own data structures (like Stack, Tree, Queue, etc.) enabling them to have a full control over their functionality.
+In this Data Structures (Laity Data Structures) Packages we will present the following non primitive data structure:
 
-In this Data Structures Packages we will present the following non primitive data structure:
-
+*   [Installation](#installation)
 *   [Stack](#stack)
 *   [Queue](#queue)
 *   [Linked List](#linked-list)
 *   [Tree](https://)
+
+
+## Installation
+* Packages built using [Python]()
+* Version : 0.0.2
+* To Install it execute the following command line:
+
+  * `pip install laity-data-structures-py`
+* Import Any Existing class in your project and Enjoy !
 
 ## Stack
 
