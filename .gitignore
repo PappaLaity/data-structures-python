@@ -2,3 +2,4 @@ data_structures/__pycache__/*
 dist/*
 build/*
 laity_data_structures_py.egg-info/*
+.DS_Store
