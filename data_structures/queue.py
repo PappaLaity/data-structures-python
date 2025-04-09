@@ -41,5 +41,5 @@ class Queue:
     def dequeue_asc(self):
       pass
 
-    def display_queue(self):
+    def display(self):
         print(self.__queue)

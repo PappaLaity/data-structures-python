@@ -37,5 +37,5 @@ class Stack:
     # def are_brackets_balanced(s):
     #     pass
 
-    def display_stack(self):
+    def display(self):
         print(self.__stack)
