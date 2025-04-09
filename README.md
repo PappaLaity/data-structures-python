@@ -15,7 +15,7 @@ In this Data Structures (Laity Data Structures) Packages we will present the fol
 *   [Stack](#stack)
 *   [Queue](#queue)
 *   [Linked List](#linked-list)
-*   [Tree](https://)
+*   [Tree](#tree)
 
 
 ## Installation
@@ -25,6 +25,7 @@ In this Data Structures (Laity Data Structures) Packages we will present the fol
 
   * `pip install laity-data-structures-py`
 * Import Any Existing class in your project and Enjoy !
+* Author : [Pappalaity](https://github.com/PappaLaity)
 
 ## Stack
 
