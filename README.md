@@ -1,8 +1,8 @@
 # 🌿 Laity Data Structures
 
-[![Version](https://img.shields.io/badge/version-0.0.2-blue.svg)](https://pypi.org/project/laity-data-structures-py)
+[![Version](https://img.shields.io/badge/version-0.1.2-blue.svg)](https://pypi.org/project/laity-data-structures/)
 [![Python](https://img.shields.io/badge/python-3.7%2B-green.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
 
 **Laity Data Structures** is a Python package that provides simple and educational implementations of essential non-primitive data structures such as stacks, queues, linked lists, and binary search trees.
 
@@ -23,7 +23,7 @@ Whether you're a student, a developer preparing for interviews, or someone curio
 ## 📦 Installation
 
 ```bash
-pip install laity-data-structures-py
+pip install laity-data-structures
 ```
 
 Once installed, you can import any class into your project:
@@ -78,7 +78,7 @@ A series of nodes connected using pointers. Efficient for insertions and deletio
 ```python
 linked_list.insert(value)
 linked_list.insertAtBeginning(value)
-linked_list.insertAfter(node_value, new_value)
+linked_list.insertAfter(index, new_value)
 linked_list.delete(value)
 linked_list.search(value)
 linked_list.traverse()
@@ -112,11 +112,11 @@ laity-data-structures-py/
 │   ├── linked_list.py
 │   ├── tree.py
 │
-├── tests/
-│   ├── test_stack.py
-│   ├── test_queue.py
-│   ├── test_linked_list.py
-│   ├── test_tree.py
+├── examples/
+│   ├── stack_test.ipynb
+│   ├── queue_test.ipynb
+│   ├── linked_list_test.ipynb
+│   ├── tree_test.ipynb
 │
 ├── README.md
 ├── setup.py
@@ -139,7 +139,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
@@ -155,5 +155,5 @@ Inspired by educational goals and the love of clean, simple code.
 Install it, play with it, modify it — and level up your understanding of data structures one line at a time.
 
 ```bash
-pip install laity-data-structures-py
+pip install laity-data-structures
 ```
