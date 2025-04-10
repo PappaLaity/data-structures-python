@@ -13,7 +13,7 @@ repo_name: data-structures-python
 
 # 📁 Navigation Bar
 nav:
-  - 🏠 Home: index.md
+  - 🏠 Home: Index.md
   - 🗂️ Stacks: Stack.md
   - 📤 Queues: Queue.md
   - 🔗 Linked Lists: LinkedList.md

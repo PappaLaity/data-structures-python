@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.2-blue.svg)](https://pypi.org/project/laity-data-structures/)
 [![Python](https://img.shields.io/badge/python-3.7%2B-green.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](./LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen)](../LICENSE)
 
 **Laity Data Structures** is a Python package that provides simple and educational implementations of essential non-primitive data structures such as stacks, queues, linked lists, and binary search trees.
 
@@ -139,7 +139,7 @@ Contributions are welcome! Here's how you can help:
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](../LICENSE) file for details.
 
 ---
 
