@@ -1,13 +1,13 @@
 # ========================
 # 📘 Project Configuration
 # ========================
-docs_dir: pages
+docs_dir: docs
 site_name: Data Structures by Laity
 site_description: A comprehensive guide to data structures in Python.
 site_author: Pappa Laity
 
 # 🌐 Live Documentation Site & GitHub Repository
-site_url: #
+site_url: https://pappalaity.github.io/data-structures-python/
 repo_url: https://github.com/PappaLaity/data-structures-python
 repo_name: data-structures-python
 
