@@ -1,0 +1,71 @@
+# ========================
+# 📘 Project Configuration
+# ========================
+docs_dir: pages
+site_name: Data Structures by Laity
+site_description: A comprehensive guide to data structures in Python.
+site_author: Pappa Laity
+
+# 🌐 Live Documentation Site & GitHub Repository
+site_url: #
+repo_url: https://github.com/PappaLaity/data-structures-python
+repo_name: data-structures-python
+
+# 📁 Navigation Bar
+nav:
+  - 🏠 Home: index.md
+  - 🗂️ Stacks: Stack.md
+  - 📤 Queues: Queue.md
+  - 🔗 Linked Lists: LinkedList.md
+  - 🌳 Trees: Tree.md
+
+# 🎨 Theme and Styling
+theme:
+  name: material
+  language: fr
+  palette:
+    # Light theme color palette
+    - scheme: default
+      primary: grey
+      accent: light grey
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark theme color palette
+    - scheme: slate
+      primary: grey
+      accent: light grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.instant       # Smooth page transitions
+    - navigation.top           # Return to top on scroll
+    - content.code.copy        # Copy code block buttons
+    - content.code.annotate    # Support for annotations on code
+    - search.highlight         # Highlights search results
+    - search.share             # Share search result links
+
+# 🧠 Markdown Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - footnotes
+  - codehilite
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
